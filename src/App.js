@@ -1,71 +1,52 @@
+import {  useState } from "react";
+import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
+import "./App.css";
 
+const DATA = [
+  {
+    id: "0e2f0db1-5457-46b0-949e-8032d2f9997a",
+    name: "/Asset/1a.jpg",
+    
+  },
+  {
+    id: "487f68b4-1746-438c-920e-d67b7df46247",
+    name:  "/Asset/1b.jpg",
+    
+  },
+  {
+    id: "25daffdc-aae0-4d73-bd31-43f73101e7c0",
+    name:  "/Asset/1c.jpg",
+    
+  },
 
-// import React, { useState } from 'react';
-// import data from './Component/data';
-// import './App.css';
-// import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+  {
+    id: "d3edf796-6449-4931-a777-ff66965a025b",
+    name:  "/Asset/1d.jpg",
+  },
 
-// function App() {
-//   const [images, setImages] = useState(data);
+  {
+    id: "960cbbcf-89a0-4d79-aa8e-56abbc15eacc",
+    name:  "/Asset/1e.jpg",
+  },
+  {
+    id: "5bee94eb-6bde-4411-b438-1c37fa6af364",
+    name:  "/Asset/1f.jpg",
+  },
+  {
+    id: "95ee6a5d-f927-4579-8c15-2b4eb86210ae",
+    name:  "/Asset/1i.jpg",
+  },
+  {
+    id: "b0ee9d50-d0a6-46f8-96e3-7f3f0f9a2525",
+    name:  "/Asset/1j.jpg",
+  }
 
-//   const onDragEnd = (result) => {
-//     if (!result.destination) return;
+];
 
-//     const newImages = [...images];
-//     const [reorderedImage] = newImages.splice(result.source.index, 1);
-//     newImages.splice(result.destination.index, 0, reorderedImage);
-
-//     setImages(newImages);
-//   };
-
-//   return (
-//     <div className='main'>
-//       <div>
-//       <DragDropContext onDragEnd={onDragEnd}>
-//         <Droppable droppableId='gallery' type='group'>
-//           {(provided) => (
-//             <div
-//               className='gallery'
-//               {...provided.droppableProps}
-//               ref={provided.innerRef}
-//             >
-//               {images.map((segment, index) => (
-//                 <Draggable
-//                   key={segment.id}
-//                   draggableId={segment.id.toString()}
-//                   index={index}
-//                 >
-//                   {(provided) => (
-//                     <div
-//                       ref={provided.innerRef}
-//                       {...provided.draggableProps}
-//                       {...provided.dragHandleProps}
-//                     >
-//                       <img src={segment.imgURL} alt='Nice Perfumes' />
-//                     </div>
-//                   )}
-//                 </Draggable>
-//               ))}
-//               {provided.placeholder}
-//             </div>
-//           )}
-//         </Droppable>
-//       </DragDropContext>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
-import React, { useState } from 'react';
-import data from './Component/data';
-import './App.css';
-import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 
 function App() {
-  const [stores, setStores] = useState(data);
+  const [stores, setStores] = useState(DATA);
+
   const handleDragAndDrop = (results) => {
     const { source, destination, type } = results;
 
@@ -121,42 +102,64 @@ function App() {
     setStores(newStores);
   };
 
-  
   return (
-    <div className='main'>
-      <div>
-      <DragDropContext onDragEnd={handleDragAndDrop}>
-        <Droppable droppableId='gallery' type='group'>
-          {(provided) => (
-            <div
-              className='gallery'
-              {...provided.droppableProps}
-              ref={provided.innerRef}
-            >
-              {stores.map((segment, index) => (
-                <Draggable
-                  key={segment.id}
-                  draggableId={segment.id.toString()}
-                  index={index}
-                >
-                  {(provided) => (
-                    <div className='img-div'
-                      ref={provided.innerRef}
-                      {...provided.draggableProps}
-                      {...provided.dragHandleProps}
-                    >
-                      <img src={segment.imgURL} alt='Nice Perfumes' />
-                    </div>
-                  )}
-                </Draggable>
-              ))}
-              {provided.placeholder}
-            </div>
-          )}
-        </Droppable>
-      </DragDropContext>
+    <div className="layout__wrapper">
+      <div className="header">
+        <h1>PERFUME STORAGE GALLERY</h1>
+      </div>
+      <div className="card">
+        <DragDropContext onDragEnd={handleDragAndDrop}>
+          <Droppable droppableId="ROOT" type="group">
+            {(provided) => (
+              <div className="gallery" {...provided.droppableProps} ref={provided.innerRef}>
+                {stores.map((store, index) => (
+                  <Draggable
+                    draggableId={store.id}
+                    index={index}
+                    key={store.id}
+                  >
+                    {(provided) => (
+                      <div
+                        {...provided.dragHandleProps}
+                        {...provided.draggableProps}
+                        ref={provided.innerRef}
+                      >
+                        <StoreList {...store} />
+                      </div>
+                    )}
+                  </Draggable>
+                ))}
+                {provided.placeholder}
+              </div>
+            )}
+          </Droppable>
+        </DragDropContext>
       </div>
     </div>
+  );
+}
+
+
+
+
+
+
+
+function StoreList({ name, id, index }) {
+  return (
+    <Draggable draggableId={`store-${id}`} index={index}>
+      {(provided) => (
+        <div
+          ref={provided.innerRef}
+          {...provided.draggableProps}
+          {...provided.dragHandleProps}
+        >
+          <div className="store-container">
+            <img src={name} style={{ width: '100%' }} alt="" />
+          </div>
+        </div>
+      )}
+    </Draggable>
   );
 }
 
