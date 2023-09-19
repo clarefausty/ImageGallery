@@ -2,10 +2,7 @@ import {  useState } from "react";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import "./App.css";
 import DATA from "./Component/DATA";
-
-
-
-
+import StoreList from "./Component/StoreList";
 
 function App() {
   const [stores, setStores] = useState(DATA);
@@ -103,27 +100,5 @@ function App() {
 }
 
 
-
-
-
-
-
-function StoreList({ name, id, index }) {
-  return (
-    <Draggable draggableId={`store-${id}`} index={index}>
-      {(provided) => (
-        <div
-          ref={provided.innerRef}
-          {...provided.draggableProps}
-          {...provided.dragHandleProps}
-        >
-          <div className="store-container">
-            <img src={name} style={{ width: '100%' }} alt="" />
-          </div>
-        </div>
-      )}
-    </Draggable>
-  );
-}
 
 export default App;
