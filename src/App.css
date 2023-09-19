@@ -1,9 +1,13 @@
-
- img{
-    width: 70%;
+.img-div{
+    height: 400px;
+    width: 300px;
+}
+img{
+    width: 100%;
     border: 1px solid #eee;
     border-radius: .5rem;
 }
+
 .main{
     display: grid;
 }
