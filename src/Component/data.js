@@ -26,7 +26,7 @@ const data =
     {
         id: 6,
         imgURL: "/Asset/1f.jpg"
-    },
+    }
 
 ]
 export default data;

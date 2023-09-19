@@ -1,15 +1,12 @@
-import React from 'react'
-import "./ImageSetup.css"
-
+import React from 'react';
+import './ImageSetup.css';
 
 function ImageSetup(props) {
   return (
     
-        <div className='img-container'>
-        <img src= {props.imgURL} alt='Nice Perfumes'/>
-        </div>
-    
-  )
+      <img src={props.imgURL} alt='Nice Perfumes' />
+
+  );
 }
 
-export default ImageSetup
+export default ImageSetup;

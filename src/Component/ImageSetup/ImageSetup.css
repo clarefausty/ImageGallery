@@ -1,13 +1,17 @@
-.img-container{
-    width: 90%;
-}
-.img-container img{
+
+ img{
     width: 70%;
     border: 1px solid #eee;
     border-radius: .5rem;
 }
-.gallery-section{
+.main{
     display: grid;
-    grid-template-columns: .5fr .5fr .5fr .5fr;
-    padding: 2em;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 4rem;
+    padding: 4em 2em;
+    align-self: center;
+    justify-self: center;
 }
