@@ -1,9 +1,21 @@
 import React from 'react'
+import ImageSetup from './Component/ImageSetup/ImageSetup'
+import data from './Component/data'
+
 
 function App() {
+  const photoSection = data.map(function(segment){
+    return <  
+    ImageSetup
+    key={segment.id}
+    {...segment}
+      />
+  })
   return (
     <div>
-      <p>The Lord is good.</p>
+    <div className='gallery-section'>
+      {photoSection}
+    </div>
     </div>
   )
 }

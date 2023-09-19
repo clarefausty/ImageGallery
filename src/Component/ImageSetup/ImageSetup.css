@@ -1,0 +1,13 @@
+.img-container{
+    width: 90%;
+}
+.img-container img{
+    width: 70%;
+    border: 1px solid #eee;
+    border-radius: .5rem;
+}
+.gallery-section{
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr .5fr;
+    padding: 2em;
+}
