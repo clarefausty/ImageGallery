@@ -1,0 +1,34 @@
+.login-container{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding-top: 4em;
+    row-gap: 3rem;
+}
+.login-container h1{
+    font-weight: 900;
+}
+form{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    row-gap: 2rem;
+}
+
+input{
+    padding: 1.5em  6em;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+}
+button{
+    padding: 1.5em 3em;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+button:hover{
+    color:green;
+}
