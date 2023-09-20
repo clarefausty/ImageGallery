@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Draggable } from 'react-beautiful-dnd';
+import ClipLoader from "react-spinners/ClipLoader";
 
 
 
@@ -26,7 +27,13 @@ function StoreList({ name, id, index }) {
           <div className="store-container">
             {isLoading && (
               <div className="image-preloader">
-                <p>Loading...</p>
+                <ClipLoader
+                    color={"silver"}
+                    loading={true}
+                    size={150}
+                    aria-label="Loading Spinner"
+                    data-testid="loader"
+                />
               </div>
             )}
             <img

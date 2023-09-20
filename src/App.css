@@ -49,6 +49,9 @@
     padding: 1em 1.8em;
     font-size: 2rem;
   }
+  .image-preloader{
+    padding: 3em 0;
+  }
   
   @media(max-width:640px){
     .gallery{
