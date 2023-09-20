@@ -4,7 +4,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 
 
 
-function StoreList({ name, id, index }) {
+function StoreList({ name, id, fragrance,  index }) {
   const [isLoading, setIsLoading] = useState(true);
 
   const handleImageLoad = () => {
@@ -25,6 +25,7 @@ function StoreList({ name, id, index }) {
           {...provided.dragHandleProps}
         >
           <div className="store-container">
+            <p>{fragrance}</p>
             {isLoading && (
               <div className="image-preloader">
                 <ClipLoader
