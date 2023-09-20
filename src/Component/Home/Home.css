@@ -48,6 +48,9 @@
     border-bottom: 1px solid gray;
     padding: 1em 1.8em;
     font-size: 2rem;
+    display: flex;
+    gap:2rem;
+    
   }
   .image-preloader{
     padding: 3em 0;
