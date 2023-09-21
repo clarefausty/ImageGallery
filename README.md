@@ -32,12 +32,12 @@ Live link
 https://clarefaustymovieapp.netlify.app/
 
 
-![_](https://github.com/clarefausty/MovieApp/blob/master/public/Asset/Movie%20AppHomePage.png)
+![_](https://github.com/clarefausty/ImageGallery/blob/master/public/Asset/Perfume%20Gallery%20(21.09.2023%2010_30).png)
 
 
 
 
-![_](https://github.com/clarefausty/MovieApp/blob/master/public/Asset/MovieAppDetails.png)
+![_](https://github.com/clarefausty/ImageGallery/blob/master/public/Asset/Perfume%20Gallery%20(21.09.2023%2010_14).png)
 
 
 
