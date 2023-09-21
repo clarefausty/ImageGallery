@@ -56,6 +56,7 @@ button:hover{
     border: 2px solid white;
     border-radius: .5rem;
     cursor: pointer;
+    text-align: center;
 }
 .pointer{
     cursor: pointer;
@@ -75,5 +76,27 @@ button:hover{
     .btn-container{
         width: 90%;
         padding-bottom: 2em;
+    }
+}
+@media (min-width: 701px) and (max-width: 1000px){
+    .log-status{
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 2em;
+    }
+    .activeColor{
+        width: 50%;
+    }
+    form input{
+        width: 90%;
+        font-size: 2rem;
+    }
+    .btn-container{
+        width: 90%;
+        padding-bottom: 2em;
+        
+    }
+    .btn-container button{
+        font-size: 2.5rem;
     }
 }
