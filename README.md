@@ -29,7 +29,7 @@ ImageGallery Website is designed to showcase images in an interactive and user-f
 
 Live link
 
-https://clarefaustymovieapp.netlify.app/
+https://clarefaustyperfumegallery.netlify.app/
 
 
 ![_](https://github.com/clarefausty/ImageGallery/blob/master/public/Asset/Perfume%20Gallery%20(21.09.2023%2010_30).png)
