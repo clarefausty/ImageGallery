@@ -36,6 +36,7 @@ form input{
 }
 .btn-container{
     width: 30%;
+    padding-bottom: 2em;
 }
 button{
     padding: 1.5em 0;
