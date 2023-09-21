@@ -32,15 +32,15 @@ Live link
 https://clarefaustyperfumegallery.netlify.app/
 
 
-![_](https://github.com/clarefausty/ImageGallery/blob/master/public/Asset/Perfume%20Gallery%20(21.09.2023%2010_30).png)
+![_](https://github.com/clarefausty/ImageGallery/blob/master/public/Asset/Perfume%20Gallery%20(21.09.2023%2013_13).png)
+
+
+
+
+![_](https://github.com/clarefausty/ImageGallery/blob/master/public/Asset/Perfume%20Gallery%20(21.09.2023%2013_07)%20(2).png)
+
 
 
 
 
 ![_](https://github.com/clarefausty/ImageGallery/blob/master/public/Asset/Perfume%20Gallery%20(21.09.2023%2010_14).png)
-
-
-
-
-
-![]()
