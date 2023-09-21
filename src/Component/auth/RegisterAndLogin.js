@@ -34,12 +34,16 @@ function RegisterAndLogin(){
     }
     return(
         <div className="login-container">
-            <h1>{login? 'signin' : 'signup'}</h1>
-            <form onSubmit={(e)=>handleSubmit(e, login? 'signin' : 'singnup')}>
+            <div className="log-status">
+        <div className={login === false? 'activeColor':'pointer'} onClick={(()=>setLogin(false))}>Sign Up</div>
+        <div className={login === true? 'activeColor':'pointer'} onClick={(()=>setLogin(true))}>Sign In</div>
+            </div>
+            <h1>{login? 'Signin' : 'Signup'}</h1>
+            <form onSubmit={(e)=>handleSubmit(e, login? 'Signin' : 'Singnup')}>
                 <input name="email" placeholder="Email"/>
                 <input name="password" placeholder="password"/>
                 <div className="btn-container">
-                <button>{login? 'signin':'signup'}</button>
+                <button>{login? 'Signin':'Signup'}</button>
                 </div>
             </form>
         </div>

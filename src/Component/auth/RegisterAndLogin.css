@@ -5,6 +5,14 @@
     padding-top: 4em;
     row-gap: 3rem;
 }
+.log-status{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    gap: 20rem;
+    align-items: center;
+    width: 100%;
+}
 .login-container h1{
     font-weight: 900;
 }
@@ -16,8 +24,8 @@ form{
     width: 100%;
 }
 
-input{
-    padding: 1.5em  6em;
+form input{
+    padding: 1.5em  0;
     border: none;
     border-radius: .5rem;
     font-size: 1.5rem;
@@ -30,7 +38,7 @@ input{
     width: 30%;
 }
 button{
-    padding: 1.5em 3em;
+    padding: 1.5em 0;
     border: none;
     border-radius: 1rem;
     font-size: 1.3rem;
@@ -41,8 +49,31 @@ button{
 button:hover{
     color:green;
 }
+.activeColor{
+    padding-top: 0.3125em;
+    height: 5rem;
+    width: 10%;
+    border: 2px solid white;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.pointer{
+    cursor: pointer;
+}
 @media(max-width:700px){
-    .login-container h1{
-        width: 100%;
+    
+    .log-status{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .activeColor{
+        width: 50%;
+    }
+    form input{
+        width: 90%;
+    }
+    .btn-container{
+        width: 90%;
+        padding-bottom: 2em;
     }
 }

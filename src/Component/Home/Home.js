@@ -71,7 +71,7 @@ function Home() {
 
   // Filter the stores based on the search query
   const filteredStores = stores.filter((store) =>
-    store.name.toLowerCase().includes(searchQuery.toLowerCase())
+    store.fragrance.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
