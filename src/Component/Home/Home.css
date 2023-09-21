@@ -76,6 +76,7 @@
   @media(max-width:37.75em){
     .gallery{
       grid-template-columns: auto;
+    
     }
     .header{
       padding: 2em;
@@ -83,7 +84,7 @@
       text-transform:capitalize;
       text-align: center;
       flex-direction: column;
-      gap: 2rem;
+      gap: 3rem;
     }
     
     .search input{
