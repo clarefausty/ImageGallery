@@ -40,8 +40,8 @@ function RegisterAndLogin(){
             </div>
             <h1>{login? 'Signin' : 'Signup'}</h1>
             <form onSubmit={(e)=>handleSubmit(e, login? 'Signin' : 'Singnup')}>
-                <input name="email" placeholder="Email"/>
-                <input name="password" placeholder="password"/>
+                <input type="email" name="email" placeholder="Email"/>
+                <input type="password" name="password" placeholder="password"/>
                 <div className="btn-container">
                 <button>{login? 'Signin':'Signup'}</button>
                 </div>
