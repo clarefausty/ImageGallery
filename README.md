@@ -9,8 +9,6 @@ ImageGallery Website is designed to showcase images in an interactive and user-f
 ## Get Started
 > Access the Website: Navigate to the website URL provided.
 >
-> Homepage: You will land on the homepage where you can explore the website's features.
->
 >User Registration: If you are a new user, click on the "Sign Up" button and fill out the registration form. If you are an existing user, click on "Log In."
 >
 >Log In: Enter your credentials and click "Log In" to access the website.
