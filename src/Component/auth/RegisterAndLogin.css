@@ -29,6 +29,7 @@ form{
 
 form input{
     padding: 1.5em  0;
+    text-align: center;
     border: none;
     border-radius: .5rem;
     font-size: 1.5rem;
