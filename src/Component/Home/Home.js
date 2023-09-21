@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import "./Home.css"
-import {DATA} from "../DATA";
+import {DATA} from "../DATA.js";
 import StoreList from "../StoreList";
 
 function Home() {
