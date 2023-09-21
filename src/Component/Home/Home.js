@@ -2,11 +2,11 @@
 import React, { useState } from "react";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import "./Home.css"
-import {DATA} from "../DATA.js";
 import StoreList from "../StoreList";
+import { dummyData } from "../dummyData";
 
 function Home() {
-  const [stores, setStores] = useState(DATA);
+  const [stores, setStores] = useState(dummyData);
   const [searchQuery, setSearchQuery] = useState("");
 
   const handleDragAndDrop = (results) => {

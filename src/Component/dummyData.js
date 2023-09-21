@@ -1,4 +1,4 @@
-export const DATA = [
+export const dummyData = [
     {
       id: "0e2f0db1-5457-46b0-949e-8032d2f9997a",
       name: "/Asset/1a.jpg",
