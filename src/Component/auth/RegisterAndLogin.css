@@ -12,9 +12,12 @@
     gap: 20rem;
     align-items: center;
     width: 100%;
+    color: #ffffff;
 }
 .login-container h1{
     font-weight: 900;
+    color: #ffffff;
+    font-size: 3rem;
 }
 form{
     display: grid;
