@@ -1,6 +1,6 @@
 import React from "react"
 import { database } from "../../firebase"
-import { createUserWithEmailAndPassword} from "firebase/auth"
+import { signInWithEmailAndPassword} from "firebase/auth"
 import { useNavigate } from "react-router-dom"
 import "./RegisterAndLogin.css"
 
@@ -13,7 +13,7 @@ function RegisterAndLogin(){
         const email = e.target.email.value
         const password = e.target.password.value
        
-        createUserWithEmailAndPassword(database, email, password).then(data=>{
+        signInWithEmailAndPassword(database, email, password).then(data=>{
             console.log(data, "authData")
             history("/home")
 
