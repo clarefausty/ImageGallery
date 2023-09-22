@@ -26,12 +26,12 @@ function RegisterAndLogin(){
     return(
         <div className="login-container">
             
-            <h1>Signin</h1>
+            <h1>Sign in</h1>
             <form onSubmit={(e)=>handleSubmit(e)}>
                 <input type="email" name="email" placeholder="Email"/>
                 <input type="password" name="password" placeholder="password"/>
                 <div className="btn-container">
-                <button>Signin</button>
+                <button>Sign in</button>
                 </div>
             </form>
         </div>
