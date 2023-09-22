@@ -93,7 +93,9 @@
       flex-direction: column;
       gap: 3rem;
     }
-    
+    .header button{
+      width: 50%;
+    }
     .search input{
       width: 100%;
     }
