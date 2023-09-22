@@ -47,11 +47,16 @@
   
   .header {
     border-bottom: 1px solid gray;
-    padding: 1em 1.8em;
+    padding: 2em 1.8em;
     font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
     
+  }
+  .header button{
+    padding: 1em 3em 1em 2em;
+    width: 10%;
+    text-align: center;
   }
   .store-container p{
     font-size: 1.2rem;

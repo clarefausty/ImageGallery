@@ -4,8 +4,21 @@ import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import "./Home.css"
 import StoreList from "../StoreList";
 import { dummyData } from "../dummyData";
+import { database } from "../../firebase";
+import { useNavigate } from "react-router-dom";
+import { signOut } from "firebase/auth";
 
 function Home() {
+  const history = useNavigate()
+  const handleClick = () =>{
+    signOut(database).then(val=>{
+        console.log(val,"val")
+        history('/')
+    })
+}
+
+
+
   const [stores, setStores] = useState(dummyData);
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -74,10 +87,11 @@ function Home() {
     store.fragrance.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+
   return (
     <div className="layout__wrapper">
       <div className="header">
-        <h1>PERFUME STORAGE GALLERY</h1>
+        <h1>PERFUME GALLERY</h1>
         <div className="search">
         <input
           type="text"
@@ -86,6 +100,7 @@ function Home() {
           onChange={handleSearch}
         />
       </div>
+      <button onClick={handleClick}>SignOut</button>
       </div>
       <div className="card">
         <DragDropContext onDragEnd={handleDragAndDrop}>
