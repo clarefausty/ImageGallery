@@ -2,7 +2,7 @@
     width: 100%;
     display: grid;
     place-items: center;
-    padding-top: 3.5em;
+    padding-top: 7.5em;
     row-gap: 3rem;
 }
 .log-status{
