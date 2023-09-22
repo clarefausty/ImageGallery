@@ -4,6 +4,8 @@
     place-items: center;
     padding-top: 7.5em;
     row-gap: 3rem;
+    justify-items: center;
+    place-items: center;
 }
 .log-status{
     display: flex;
