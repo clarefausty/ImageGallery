@@ -9,9 +9,9 @@ ImageGallery Website is designed to showcase images in an interactive and user-f
 ## Get Started
 > Access the Website: Navigate to the website URL provided.
 >
->User Registration: If you are a new user, click on the "Sign Up" button and fill out the registration form. If you are an existing user, click on "Log In."
+>Login with a static email (user@example.com) and static password (1Password)
 >
->Log In: Enter your credentials and click "Log In" to access the website.
+
 
 ## HOW TO RUN THE APP
 > Fork and Clone the Repository to your Local Machine
