@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Draggable } from 'react-beautiful-dnd';
 import ClipLoader from "react-spinners/ClipLoader";
 
 
@@ -17,13 +16,13 @@ function StoreList({ name, id, fragrance,  index }) {
   };
 
   return (
-    <Draggable draggableId={`store-${id}`} index={index}>
-      {(provided) => (
-        <div
-          ref={provided.innerRef}
-          {...provided.draggableProps}
-          {...provided.dragHandleProps}
-        >
+    // <Draggable draggableId={`store-${id}`} index={index}>
+    //   {(provided) => (
+    //     <div
+    //       ref={provided.innerRef}
+    //       {...provided.draggableProps}
+    //       {...provided.dragHandleProps}
+    //     >
           <div className="store-container">
             <p>{fragrance}</p>
             {isLoading && (
@@ -45,9 +44,10 @@ function StoreList({ name, id, fragrance,  index }) {
               style={{ display: isLoading ? 'none' : 'block' }}
             />
           </div>
-        </div>
-      )}
-    </Draggable>
+        // </div>
+    //   )}
+    // </Draggable>
+    
   );
 }
 
