@@ -30,11 +30,15 @@
   
   .card{
     width: 100%;
-    padding: 0 0 3em 2em;
+    padding: 4em 0 3em 2em;
     
   }
+  /* .card-surrounds{
+
+  } */
   img{
-    width: 100%;
+    width: 60%;
+    border-radius: 2rem;
   }
   .gallery{
     display: grid;
@@ -42,7 +46,7 @@
     row-gap: 5rem;
     column-gap: 0;
     width: 100%;
-    padding-bottom: 2em;
+    padding: 2em 0;
   }
   
   .header {
@@ -61,6 +65,7 @@
   .store-container p{
     font-size: 1.8rem;
     font-weight: 800;
+    color: #00df9a;
   }
   .search input{
     padding: 1em 2em;
@@ -76,6 +81,10 @@
   .store-container{
     height: 400px;
       width: 300px;
+      background-color: black;
+      border-radius: 2rem;
+      display: grid;
+      place-items: center;
       
   }
   

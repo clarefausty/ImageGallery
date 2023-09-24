@@ -118,7 +118,7 @@ function Home() {
                     key={store.id}
                   >
                     {(provided) => (
-                      <div
+                      <div className="card-surrounds"
                         {...provided.dragHandleProps}
                         {...provided.draggableProps}
                         ref={provided.innerRef}
